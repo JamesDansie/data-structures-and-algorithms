@@ -13,3 +13,6 @@ It is O(n) for both time and efficiency because it goes through every element in
 ## Solution
 <!-- Embedded whiteboard image -->
 ![](401challenge02.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
