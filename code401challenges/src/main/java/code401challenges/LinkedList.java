@@ -19,26 +19,6 @@ public class LinkedList {
         }
     }
 
-    public LinkedList insertTail(LinkedList list, int value){
-        Node newNode = new Node(value);
-        newNode.next = null;
-
-        //checking to see if the list is empty
-        if(list.head == null){
-            list.head = newNode;
-        } else {
-            Node lastNode = list.head;
-
-            //looking for the end of the list
-            while(lastNode.next != null){
-                lastNode = lastNode.next;
-            }
-            lastNode.next = newNode;
-        }
-        nodeNum++;
-        return list;
-    }
-
     public void insertTail(int value){
         Node newNode = new Node(value);
         newNode.next = null;
@@ -58,20 +38,6 @@ public class LinkedList {
         nodeNum++;
     }
 
-    public LinkedList insertHead(LinkedList list, int value){
-        Node newNode = new Node(value);
-        Node temp = null;
-
-        if(list.head == null){
-            list.head = newNode;
-        } else{
-        temp = list.head;
-        list.head = newNode;
-        list.head.next = temp;
-        }
-        return list;
-    }
-
     public void insertHead(int value){
         Node newNode = new Node(value);
         Node temp = null;
@@ -85,17 +51,6 @@ public class LinkedList {
         }
     }
 
-    public String toString(LinkedList list){
-        Node currentNode = list.head;
-        String outPut = "Linked List: ";
-
-        while(currentNode != null){
-            outPut += currentNode.value + " ";
-
-            currentNode = currentNode.next;
-        }
-        return outPut;
-    }
 
     public String toString(){
         Node currentNode = this.head;

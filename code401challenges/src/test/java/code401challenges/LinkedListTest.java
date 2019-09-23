@@ -7,20 +7,6 @@ import static org.junit.Assert.*;
 public class LinkedListTest {
 
     @Test
-    public void testListCreation() {
-        LinkedList list = new LinkedList();
-        list = list.insertTail(list,2);
-        list = list.insertTail(list,3);
-        list = list.insertHead(list,1);
-
-        assertEquals(
-                "This should contain 1, 2, 3",
-                "Linked List: 1 2 3 ",
-                list.toString(list))
-        ;
-    }
-
-    @Test
     public void testListCreationEmpty() {
         LinkedList list = new LinkedList();
         list.insertTail(2);
