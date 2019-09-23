@@ -1,12 +1,9 @@
-package code401challenges;
+package code401challenges.linkedList;
 
 // Shamelessly copied from; https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/
 public class LinkedList {
 
     Node head;
-    Node tail;
-    int nodeNum;
-
 
     class Node {
         int value;
@@ -35,7 +32,6 @@ public class LinkedList {
             }
             lastNode.next = newNode;
         }
-        nodeNum++;
     }
 
     public void insertHead(int value){
