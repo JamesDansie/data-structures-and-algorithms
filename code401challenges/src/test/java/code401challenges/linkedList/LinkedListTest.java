@@ -59,4 +59,12 @@ public class LinkedListTest {
                 "Linked List: 1 10 2 3",
                 list.toString());
     }
+
+    @Test
+    public void testInsertAfter(){
+        list.insertAfter(10,2);
+        assertEquals("The list should be 1, 2, 10, 3",
+                "Linked List: 1 2 10 3",
+                list.toString());
+    }
 }

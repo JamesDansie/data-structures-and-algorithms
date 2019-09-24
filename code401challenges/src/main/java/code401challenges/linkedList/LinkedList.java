@@ -77,7 +77,17 @@ public class LinkedList {
             Node currNode = head;
             Node nextNode = head.next;
 
-            while(nextNode)
+            while(nextNode != null && currNode.value != key){
+                currNode = currNode.next;
+                nextNode = nextNode.next;
+            }
+
+            if(nextNode == null) {
+                System.out.println(String.format("Did not find the value %d", key));
+            } else {
+                newNode.next = nextNode;
+                currNode.next = newNode;
+            }
         }
     }
 
