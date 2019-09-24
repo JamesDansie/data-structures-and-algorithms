@@ -1,5 +1,7 @@
 package code401challenges.linkedList;
 
+import java.util.StringJoiner;
+
 // Shamelessly copied from; https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/
 public class LinkedList {
 
@@ -11,8 +13,12 @@ public class LinkedList {
 
         //Node constructor, only ints for now
         Node(int value){
+            this(value, null);
+        }
+
+        Node(int value, Node next){
             this.value = value;
-            this.next = null;
+            this.next = next;
         }
     }
 
@@ -35,29 +41,57 @@ public class LinkedList {
     }
 
     public void insertHead(int value){
-        Node newNode = new Node(value);
-        Node temp = null;
+        this.head = new Node(value, this.head);
+    }
 
-        if(this.head == null){
-            this.head = newNode;
-        } else{
-            temp = this.head;
-            this.head = newNode;
-            this.head.next = temp;
+    public void insertBefore(int newVal, int key){
+        Node newNode = new Node(newVal);
+
+        if(head == null || head.next == null){
+            System.out.println("List is too short");
+        } else if(head.value == key){
+            insertHead(newVal);
+        } else {
+            Node prevNode = head;
+            Node currNode = head.next;
+
+            while(currNode != null && currNode.value != key){
+                prevNode = prevNode.next;
+                currNode = currNode.next;
+            }
+
+            if(currNode == null){
+                System.out.println(String.format("Did not find the value %d",key));
+            } else {
+                newNode.next = currNode;
+                prevNode.next = newNode;
+            }
         }
     }
 
+    public void insertAfter(int newVal, int key){
+        Node newNode = new Node(newVal);
+        if(head == null || head.next == null){
+            System.out.println("List is too short");
+        } else {
+            Node currNode = head;
+            Node nextNode = head.next;
+
+            while(nextNode)
+        }
+    }
 
     public String toString(){
         Node currentNode = this.head;
-        String outPut = "Linked List: ";
+
+        StringJoiner sj = new StringJoiner(" ");
+        sj.add("Linked List:");
 
         while(currentNode != null){
-            outPut += currentNode.value + " ";
-
+            sj.add("" + currentNode.value);
             currentNode = currentNode.next;
         }
-        return outPut;
+        return sj.toString();
     }
 
     public boolean contains(int test){
