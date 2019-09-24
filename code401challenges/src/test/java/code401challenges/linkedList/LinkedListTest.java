@@ -61,10 +61,32 @@ public class LinkedListTest {
     }
 
     @Test
+    public void testInsertBeforeNotFound(){
+        assertFalse("Looking for a key that does not exist", list.insertBefore(10, 10));
+    }
+
+    @Test
+    public void testInsertBeforeTooShort(){
+        LinkedList shorty = new LinkedList();
+        assertFalse("The list is too short", list.insertBefore(10, 10));
+    }
+
+    @Test
     public void testInsertAfter(){
         list.insertAfter(10,2);
         assertEquals("The list should be 1, 2, 10, 3",
                 "Linked List: 1 2 10 3",
                 list.toString());
+    }
+
+    @Test
+    public void testInsertAfterNotFound(){
+        assertFalse("Looking for a key that does not exist", list.insertAfter(10, 10));
+    }
+
+    @Test
+    public void testInsertAfterTooShort(){
+        LinkedList shorty = new LinkedList();
+        assertFalse("The list is too short", list.insertBefore(10, 10));
     }
 }

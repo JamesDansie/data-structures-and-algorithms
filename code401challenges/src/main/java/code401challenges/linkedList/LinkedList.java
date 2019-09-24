@@ -44,7 +44,8 @@ public class LinkedList {
         this.head = new Node(value, this.head);
     }
 
-    public void insertBefore(int newVal, int key){
+    public boolean insertBefore(int newVal, int key){
+        boolean success = false;
         Node newNode = new Node(newVal);
 
         if(head == null || head.next == null){
@@ -65,11 +66,14 @@ public class LinkedList {
             } else {
                 newNode.next = currNode;
                 prevNode.next = newNode;
+                success = true;
             }
         }
+        return success;
     }
 
-    public void insertAfter(int newVal, int key){
+    public boolean insertAfter(int newVal, int key){
+        boolean success = false;
         Node newNode = new Node(newVal);
         if(head == null || head.next == null){
             System.out.println("List is too short");
@@ -87,8 +91,10 @@ public class LinkedList {
             } else {
                 newNode.next = nextNode;
                 currNode.next = newNode;
+                success = true;
             }
         }
+        return success;
     }
 
     public String toString(){
