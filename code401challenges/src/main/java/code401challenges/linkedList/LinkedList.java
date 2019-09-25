@@ -111,6 +111,7 @@ public class LinkedList {
     }
 
     //string method
+    @Override
     public String toString(){
         Node currentNode = this.head;
 
@@ -122,6 +123,32 @@ public class LinkedList {
             currentNode = currentNode.next;
         }
         return sj.toString();
+    }
+
+    public int kthFromEnd(int k) throws IllegalAccessException {
+        Node p1 = this.head;
+        Node p2 = this.head;
+        if(k < 0){throw new IllegalArgumentException("K cannot be negative");}
+        if(this.head == null){throw new IllegalAccessException("The list is empty");}
+
+        int count = 0;
+
+        //setting up k to initially be offset by k
+        while(p2 != null && count < k){
+            p2 = p2.next;
+            count++;
+        }
+        //checking k isn't too long
+        if(k > count){throw new IllegalArgumentException("K must be smaller than the list length");}
+
+        //if count == k then the while loop counted enough, otherwise the while loop hit a null
+        if(count == (k)){
+            while(p2.next != null){
+                p2 = p2.next;
+                p1 = p1.next;
+            }
+        }
+        return p1.value;
     }
 
     //checking for a value in the list

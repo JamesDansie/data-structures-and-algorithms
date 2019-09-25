@@ -89,4 +89,49 @@ public class LinkedListTest {
         LinkedList shorty = new LinkedList();
         assertFalse("The list is too short", list.insertBefore(10, 10));
     }
+
+    @Test
+    public void testKthGood() throws IllegalAccessException {
+        list.insertTail(4);
+        list.insertTail(5);
+        assertEquals("The list should be 1, 2, 3, 4, 5 and k=2 should be 3",
+                3,
+                list.kthFromEnd(2));
+    }
+
+    @Test
+    public void testKthEnd() throws IllegalAccessException {
+        list.insertTail(4);
+        list.insertTail(5);
+        assertEquals("The list should be 1, 2, 3, 4, 5 and k=2 should be 3",
+                5,
+                list.kthFromEnd(0));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testKthNeg() throws IllegalAccessException {
+        list.insertTail(4);
+        list.insertTail(5);
+        assertEquals("The list should be 1, 2, 3, 4, 5 and k=2 should be 3",
+                5,
+                list.kthFromEnd(-1));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testKthLong() throws IllegalAccessException {
+        list.insertTail(4);
+        list.insertTail(5);
+        assertEquals("The list should be 1, 2, 3, 4, 5 and k=2 should be 3",
+                5,
+                list.kthFromEnd(10));
+    }
+
+    @Test
+    public void testKthEqual() throws IllegalAccessException {
+        list.insertTail(4);
+        list.insertTail(5);
+        assertEquals("The list should be 1, 2, 3, 4, 5 and k=2 should be 3",
+                1,
+                list.kthFromEnd(4));
+    }
 }
