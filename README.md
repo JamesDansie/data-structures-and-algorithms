@@ -98,3 +98,22 @@ It is O(n) for performance, and O(1) for storage.
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge06a.JPG)
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge06b.JPG)
+
+# Linked List - k from the end
+<!-- Short summary or background information -->
+This searches for the value that is "k" units from the end of the linked list.
+
+## Challenge
+<!-- Description of the challenge -->
+This looks for something that is "k" from the end of the list. However, there are a bunch of cases that could break this, so testing is important.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+It is O(n) for performance, and O(1) for storage.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge07.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
