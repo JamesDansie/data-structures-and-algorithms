@@ -117,3 +117,22 @@ It is O(n) for performance, and O(1) for storage.
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
+
+# Linked List - merge
+<!-- Short summary or background information -->
+Method accepts two linked lists, then merges them together.
+
+## Challenge
+<!-- Description of the challenge -->
+The method will merge a node from each list every other time. It will also handle lists of different length. Empty lists with throw an exception.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+It is O(n) for performance, and O(n) for storage.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge08.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
