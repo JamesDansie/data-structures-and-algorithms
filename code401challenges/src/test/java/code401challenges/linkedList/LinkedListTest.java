@@ -134,4 +134,75 @@ public class LinkedListTest {
                 1,
                 list.kthFromEnd(4));
     }
+
+    @Test
+    public void testMergeWorking(){
+        LinkedList ll1 = new LinkedList();
+        LinkedList ll2 = new LinkedList();
+        ll1.insertTail(1);
+        ll1.insertTail(3);
+        ll1.insertTail(5);
+        ll1.insertTail(7);
+        ll2.insertTail(2);
+        ll2.insertTail(4);
+        ll2.insertTail(6);
+        ll2.insertTail(8);
+
+        LinkedList ll3 = LinkedList.mergedList(ll1, ll2);
+        assertEquals("LL should be 1 through 8",
+                "Linked List: 1 2 3 4 5 6 7 8",
+            ll3.toString());
+    }
+
+    @Test
+    public void testMergeNotWorking(){
+        LinkedList ll1 = new LinkedList();
+        LinkedList ll2 = new LinkedList();
+        ll1.insertTail(1);
+        ll1.insertTail(3);
+        ll1.insertTail(5);
+        ll1.insertTail(7);
+        ll2.insertTail(2);
+        ll2.insertTail(4);
+        ll2.insertTail(6);
+        ll2.insertTail(8);
+
+        LinkedList ll3 = LinkedList.mergedList(ll1, ll2);
+        assertNotEquals("LL should be 1 through 8",
+                "Linked List: 1 2 3 4 5 6 7",
+                ll3.toString());
+    }
+
+    @Test
+    public void testMergeDiffLengths(){
+        LinkedList ll1 = new LinkedList();
+        LinkedList ll2 = new LinkedList();
+        ll1.insertTail(1);
+        ll1.insertTail(3);
+        ll1.insertTail(5);
+        ll1.insertTail(7);
+        ll2.insertTail(2);
+        ll2.insertTail(4);
+
+        LinkedList ll3 = LinkedList.mergedList(ll1, ll2);
+        assertNotEquals("LL should be 1 through 8",
+                "Linked List: 1 2 3 4 5 7",
+                ll3.toString());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testShortList(){
+        LinkedList ll1 = new LinkedList();
+        LinkedList ll2 = new LinkedList();
+        ll1.insertTail(1);
+        ll1.insertTail(3);
+        ll1.insertTail(5);
+        ll1.insertTail(7);
+
+
+        LinkedList ll3 = LinkedList.mergedList(ll1, ll2);
+        assertNotEquals("LL should be 1 through 8",
+                "Linked List: 1 2 3 4 5 7",
+                ll3);
+    }
 }

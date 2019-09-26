@@ -163,4 +163,41 @@ public class LinkedList {
         }
         return false;
     }
+
+    public static LinkedList mergedList(LinkedList ll1, LinkedList ll2){
+        //making ll3 with a gibberish head
+        LinkedList ll3 = new LinkedList();
+        ll3.insertHead(100);
+
+        //setting up current Nodes
+        Node currNode1 = ll1.head;
+        Node currNode2 = ll2.head;
+        Node currNode3 = ll3.head;
+
+        //checking that we have lists to work with
+        if(currNode1 == null || currNode2 == null){
+            throw new IllegalArgumentException("List is empty");
+        } else {
+            //check that there is more list to work with
+            while(currNode1 != null && currNode2 != null){
+                //if there's more of list 1 then store it an move along
+                if(currNode1 != null){
+                    currNode3.next = currNode1;
+                    currNode3 = currNode3.next;
+                    currNode1 = currNode1.next;
+                }
+                //if there's more of list 2 then store it and move along
+                if(currNode2 != null){
+                    currNode3.next = currNode2;
+                    currNode3 = currNode3.next;
+                    currNode2 = currNode2.next;
+                }
+            }
+        }
+
+        //getting rid of the gibberish head
+        ll3.head = ll3.head.next;
+
+        return ll3;
+    }
 }
