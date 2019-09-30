@@ -1,5 +1,6 @@
 package code401challenges.stacksandqueues;
 
+//I have seen this before; https://github.com/JamesDansie/CS143/tree/master/csc143/data_structures
 //generic node type from; https://stackoverflow.com/questions/19128858/implementing-node-as-a-generic-class
 public class Node <E> {
 

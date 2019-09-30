@@ -9,7 +9,7 @@ public class StackTest {
     Stack<String> stack;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         stack = new Stack<String>();
         stack.push("a");
         stack.push("b");
@@ -17,7 +17,7 @@ public class StackTest {
     }
 
     @Test
-    public void push() throws Exception {
+    public void push() {
         stack.push("d");
         String last = stack.pop();
         assertEquals("The pop should equal d",
@@ -26,7 +26,7 @@ public class StackTest {
     }
 
     @Test
-    public void pop() throws Exception {
+    public void pop() {
         assertEquals("The pop should equal c",
                 "c",
                 stack.pop());
@@ -43,5 +43,11 @@ public class StackTest {
     public void testEmpty(){
         Stack<String> empty = new Stack<>();
         assertNull(empty.top);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testEmptyPop() throws Exception {
+        Stack<String> empty = new Stack<>();
+        assertNull(empty.pop());
     }
 }

@@ -7,9 +7,9 @@ public class Stack<E> {
     //adds a node at the beginning
     public void push(E o){this.top = new Node<E>(o, this.top);}
 
-    public E pop() throws Exception {
+    public E pop() {
         if(top == null){
-            throw new Exception("The stack is empty");
+            throw new IllegalArgumentException("The stack is empty");
         } else {
             Node<E> tmp = top;
             top = top.next;
@@ -18,6 +18,10 @@ public class Stack<E> {
     }
 
     public E peek(){
-        return top.data;
+        if(top == null){
+            throw new IllegalArgumentException("The stack is empty");
+        } else {
+            return top.data;
+        }
     }
 }

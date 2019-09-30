@@ -15,15 +15,23 @@ public class Queue<E> {
         }
     }
 
-    public E dequeue(){
+    public E dequeue() {
         //returns node from the front
-        Node<E> tmp = front;
-        front = front.next;
-        return tmp.data;
+        if(front == null){
+            throw new IllegalArgumentException("Queue is empty");
+        } else {
+            Node<E> tmp = front;
+            front = front.next;
+            return tmp.data;
+        }
     }
 
-    public E peek(){
+    public E peek() {
         //returns data from the front
-        return front.data;
+        if(front == null){
+            throw new IllegalArgumentException("Queue is empty");
+        } else {
+            return front.data;
+        }
     }
 }
