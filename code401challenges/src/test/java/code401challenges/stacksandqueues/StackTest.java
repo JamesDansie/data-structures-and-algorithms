@@ -34,5 +34,14 @@ public class StackTest {
 
     @Test
     public void peek() {
+        assertEquals("The peek should equal c",
+                "c",
+                stack.peek());
+    }
+
+    @Test
+    public void testEmpty(){
+        Stack<String> empty = new Stack<>();
+        assertNull(empty.top);
     }
 }
