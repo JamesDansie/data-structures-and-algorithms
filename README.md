@@ -32,6 +32,7 @@ The 301 folder contains;
 * Linked List k from the end
 * Linked List Merge
 * Stack and Queue
+* PseudoQueue
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -153,3 +154,22 @@ This lab implements a generic stack and queue with the necessary testing. The st
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/stacksandqueues
 I have seen this before; https://github.com/JamesDansie/CS143/tree/master/csc143/data_structures
 generic node type from; https://stackoverflow.com/questions/19128858/implementing-node-as-a-generic-class
+
+# PseudoQueue
+<!-- Short summary or background information -->
+Implements a queue using two stacks.
+
+## Challenge
+<!-- Description of the challenge -->
+The method will make a queue from two stacks. The tricky part is that stacks are LIFO while queues are FIFO. The trick is to have two stacks, so you can use one to reverse the order.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+It is O(n) for performance, and O(n) for storage.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge11.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
