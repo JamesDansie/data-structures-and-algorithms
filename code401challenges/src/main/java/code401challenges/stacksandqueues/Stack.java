@@ -24,4 +24,8 @@ public class Stack<E> {
             return top.data;
         }
     }
+
+    public boolean empty(){
+        return this.top == null;
+    }
 }
