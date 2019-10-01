@@ -151,9 +151,9 @@ Code at; https://github.com/JamesDansie/data-structures-and-algorithms
 This lab implements a generic stack and queue with the necessary testing. The stack has the methods; push, pop, and peek. The queue has the methods; enqueue, dequeue, and peek. Pop, peek, and dequeue will throw exceptions if they are performed on an empty stack or queue.
 
 ### References
-Code at; https://github.com/JamesDansie/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/stacksandqueues
-I have seen this before; https://github.com/JamesDansie/CS143/tree/master/csc143/data_structures
-generic node type from; https://stackoverflow.com/questions/19128858/implementing-node-as-a-generic-class
+* Code at; https://github.com/JamesDansie/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/stacksandqueues
+* I have seen this before; https://github.com/JamesDansie/CS143/tree/master/csc143/data_structures
+* generic node type from; https://stackoverflow.com/questions/19128858/implementing-node-as-a-generic-class
 
 # PseudoQueue
 <!-- Short summary or background information -->
@@ -173,3 +173,4 @@ It is O(n) for performance, and O(n) for storage.
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
+
