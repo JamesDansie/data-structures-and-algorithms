@@ -174,3 +174,21 @@ It is O(n) for performance, and O(n) for storage.
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
 
+# Animal Shelter
+<!-- Short summary or background information -->
+Make a class of animal shelter that stores cats and dogs with a FIFO method.
+
+## Challenge
+<!-- Description of the challenge -->
+The class should have an enqueue and dequeue method that accepts and returns two different classes, Cats and Dogs.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+It is O(1) for both time and space.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge12.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
