@@ -33,6 +33,8 @@ The 301 folder contains;
 * Linked List Merge
 * Stack and Queue
 * PseudoQueue
+* Animal Shelter
+* Multi Bracket Validation
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -189,6 +191,25 @@ It is O(1) for both time and space.
 ## Solution
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge12.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
+
+# Multi Bracket Validation
+<!-- Short summary or background information -->
+Make a method that checks if braces are balanced.
+
+## Challenge
+<!-- Description of the challenge -->
+The method will return a true if (), {}, and [] are balanced. Also need to check the order of the braces, so ({)} would still fail.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The method will loop through the string, and store the opening braces in a stack. When the loop finds a closing brace it will pop the stack, and see it matches. It is O(n) for performance and storage because worse case is that the entire string gets stored in the internal stack.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge13.JPG)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
