@@ -35,6 +35,7 @@ The 301 folder contains;
 * PseudoQueue
 * Animal Shelter
 * Multi Bracket Validation
+* Binary Tree and BST Tree
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -213,3 +214,6 @@ The method will loop through the string, and store the opening braces in a stack
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
+
+# Binary Tree and BST
+Implemented binary tree and BST for ints. The binary tree will look for null children, if it doesn't find any then it will pick at random. The BST will sort based on size. Currently no re-balancing methods. All trees have preorder, inorder, and postorder traversals.
