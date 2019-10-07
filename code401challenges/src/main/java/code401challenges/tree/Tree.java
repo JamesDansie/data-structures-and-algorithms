@@ -2,8 +2,15 @@ package code401challenges.tree;
 
 import code401challenges.linkedList.LinkedList;
 
-public class BinarySearchTree {
+import java.util.Random;
+
+public class Tree {
     Node root;
+
+    public int randomInt(){
+        Random rand = new Random();
+        return rand.nextInt(2);
+    }
 
     public void add(int data){
         root = addRecursive(root, data);
@@ -14,15 +21,18 @@ public class BinarySearchTree {
             return new Node(data);
         }
 
-        //little values to the left, big stuff to the right
-        if(data < curr.data){
+        //first try to balance it, then random choice
+        if(curr.left == null){
             curr.left = addRecursive(curr.left, data);
-        } else if (data > curr.data){
+        } else if (curr.right == null){
+            curr.right = addRecursive(curr.right, data);
+        } else if (randomInt() == 0) {
+            curr.left = addRecursive(curr.left, data);
+        } else if (randomInt() == 1) {
             curr.right = addRecursive(curr.right, data);
         } else {
             return curr;
         }
-
         return curr;
     }
 

@@ -46,7 +46,6 @@ public class BinarySearchTreeTest {
         assertEquals("The linked list should be 3 4 5 6 7 8",
                 "Linked List: 3 4 5 6 7 8 9",
         test.traverseInOrder().toString());
-        System.out.println(test.traverseInOrder());
     }
 
     @Test
@@ -54,7 +53,6 @@ public class BinarySearchTreeTest {
         assertEquals("The linked list should be 6 3 4 5 7 8 9",
                 "Linked List: 6 3 4 5 7 8 9",
                 test.traversePreOrder().toString());
-        System.out.println(test.traversePreOrder());
     }
 
     @Test
@@ -62,6 +60,5 @@ public class BinarySearchTreeTest {
         assertEquals("The linked list should be 3 5 4 7 9 8 6",
                 "Linked List: 3 5 4 7 9 8 6",
                 test.traversePostOrder().toString());
-        System.out.println(test.traversePostOrder());
     }
 }
