@@ -216,4 +216,7 @@ The method will loop through the string, and store the opening braces in a stack
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
 
 # Binary Tree and BST
-Implemented binary tree and BST for ints. The binary tree will look for null children, if it doesn't find any then it will pick at random. The BST will sort based on size. Currently no re-balancing methods. All trees have preorder, inorder, and postorder traversals.
+Implemented binary tree and BST for ints. The binary tree will look for null children, if it doesn't find any then it will pick at random. The BST will sort based on size. Currently no re-balancing methods. All trees have preorder, inorder, and postorder traversals. References;
+* https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
+* https://stackoverflow.com/questions/22927184/trying-to-use-hashmap-to-count-frequency-of-words-in-array
+* https://www.baeldung.com/java-binary-tree
