@@ -36,6 +36,7 @@ The 301 folder contains;
 * Animal Shelter
 * Multi Bracket Validation
 * Binary Tree and BST Tree
+* FizzBuzz Tree
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -220,3 +221,22 @@ Implemented binary tree and BST for ints. The binary tree will look for null chi
 * https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
 * https://stackoverflow.com/questions/22927184/trying-to-use-hashmap-to-count-frequency-of-words-in-array
 * https://www.baeldung.com/java-binary-tree
+
+# FizzBuzz Tree
+<!-- Short summary or background information -->
+Make a method that goes through a tree and replaces the values it finds.
+
+## Challenge
+<!-- Description of the challenge -->
+The method will traverse the tree and replace things that are divisible by 3 with 'Fizz'. It will replace things that are divisible by 5 with 'Buzz'. It will replace things that are divisible by 3 and 5 with 'FizzBuzz'.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The method will do and inOrder traversal. A helper function will check the current value and return the appropriate string. The method will reassign as it goes. It is O(n) for performance (it has to go to every node), and it is O(1) for storage (nothing new is created).
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge16.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
