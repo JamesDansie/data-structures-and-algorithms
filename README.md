@@ -37,6 +37,7 @@ The 301 folder contains;
 * Multi Bracket Validation
 * Binary Tree and BST Tree
 * FizzBuzz Tree
+* Breadth First Traversal for Tree
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -237,6 +238,25 @@ The method will do and inOrder traversal. A helper function will check the curre
 ## Solution
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge16.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
+
+# FizzBuzz Tree
+<!-- Short summary or background information -->
+Make a method that prints out a tree using breadth traversal.
+
+## Challenge
+<!-- Description of the challenge -->
+Make a method that prints out a tree using breadth traversal.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The method will receive a tree. It will then make a queue, and add the root node. It will then dequeue and print the that value. It will then enqueue the left and right of the dequeued node. This way the queue will go through the entire tree.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge17.JPG)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
