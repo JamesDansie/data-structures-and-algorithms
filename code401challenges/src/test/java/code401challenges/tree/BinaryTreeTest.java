@@ -22,4 +22,11 @@ public class BinaryTreeTest {
     public void breadthprint() {
         test.breadthprint();
     }
+
+    @Test
+    public void findMax(){
+        assertEquals("max is 5",
+                5,
+                test.findMax());
+    }
 }

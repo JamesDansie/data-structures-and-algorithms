@@ -4,18 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BinaryTree {
-    //caused conflicts with other file structure
-//    class Node{
-//        int value;
-//        Node left;
-//        Node right;
-//
-//        public Node(int value){
-//            this.value = value;
-//            this.left = null;
-//            this.right = null;
-//        }
-//    }
 
     Node root;
 
@@ -37,5 +25,22 @@ public class BinaryTree {
                 queue.add(tmp.right);
             }
         }
+    }
+
+    public int findMax(){
+        return findMaxRecursive(root, root.data);
+    }
+
+    private int findMaxRecursive(Node curr, int max){
+        if(curr == null){
+            return max;
+        }
+        if(curr.data > max){
+            max = curr.data;
+        }
+        max = findMaxRecursive(curr.left, max);
+        max = findMaxRecursive(curr.right, max);
+
+        return max;
     }
 }

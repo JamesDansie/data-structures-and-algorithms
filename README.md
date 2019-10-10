@@ -38,6 +38,7 @@ The 301 folder contains;
 * Binary Tree and BST Tree
 * FizzBuzz Tree
 * Breadth First Traversal for Tree
+* Find Max for Binary Tree
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -242,7 +243,7 @@ The method will do and inOrder traversal. A helper function will check the curre
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
 
-# FizzBuzz Tree
+# Breadth First Traversal
 <!-- Short summary or background information -->
 Make a method that prints out a tree using breadth traversal.
 
@@ -257,6 +258,25 @@ The method will receive a tree. It will then make a queue, and add the root node
 ## Solution
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge17.JPG)
+
+### References
+Code at; https://github.com/JamesDansie/data-structures-and-algorithms
+
+# Find Max for Binary Tree
+<!-- Short summary or background information -->
+Make a method that finds the max value in a binary tree.
+
+## Challenge
+<!-- Description of the challenge -->
+Make a method that find the max value in a binary tree.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The method will start with the root node and root.data as the max value. It will then move through the tree recursively and compare the current value to the max value. If the current value it greater it will assign that to the max value, and then pass that to the next node. This is O(n) for performance since it will go through every node. It is O(1) for storage since it doesn't store anything.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge18.JPG)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
