@@ -70,7 +70,7 @@ It is O(n) for both time and efficiency because it goes through every element in
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge02.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge02.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
@@ -129,7 +129,7 @@ It is O(n) for performance, and O(1) for storage.
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge07.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge07.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
@@ -148,7 +148,7 @@ It is O(n) for performance, and O(n) for storage.
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge08.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge08.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
@@ -175,7 +175,7 @@ It is O(n) for performance, and O(n) for storage.
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge11.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge11.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
@@ -194,7 +194,7 @@ It is O(1) for both time and space.
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge12.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge12.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
@@ -213,7 +213,7 @@ The method will loop through the string, and store the opening braces in a stack
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge13.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge13.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
@@ -238,7 +238,7 @@ The method will do and inOrder traversal. A helper function will check the curre
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge16.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge16.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
@@ -257,7 +257,7 @@ The method will receive a tree. It will then make a queue, and add the root node
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge17.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge17.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
@@ -276,7 +276,7 @@ The method will start with the root node and root.data as the max value. It will
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](./code401challenges/src/main/java/code401challenges/assets/401challenge18.JPG)
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge18.jpg)
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
