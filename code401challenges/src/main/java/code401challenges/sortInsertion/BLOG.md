@@ -26,18 +26,16 @@ public static int[] InsertionSort(int[] arrIn){
     return arrIn;
 }
 ```
+For a video visualizaiton checkout; https://youtu.be/kPRA0W1kECg?t=10
 
 ![](https://youtu.be/kPRA0W1kECg?t=10)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=kPRA0W1kECg&t=277s
-" target="_blank"><img src="http://img.youtube.com/vi/kPRA0W1kECg&t=277s/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=kPRA0W1kECg&t=10s
+" target="_blank"><img src="http://img.youtube.com/vi/kPRA0W1kECg&t=10s/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/kPRA0W1kECg&t=277s/0.jpg)](http://www.youtube.com/watch?v=kPRA0W1kECg&t=277s)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/kPRA0W1kECg&t=10s/0.jpg)](http://www.youtube.com/watch?v=kPRA0W1kECg&t=277s)
 
-
-## Learning Objectives
-* I object to learning, and we're done here.
 ---
 ## References
 * https://en.wikipedia.org/wiki/Insertion_sort
