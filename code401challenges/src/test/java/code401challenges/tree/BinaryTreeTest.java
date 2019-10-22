@@ -11,7 +11,7 @@ public class BinaryTreeTest {
     public void setUp() throws Exception {
         test = new BinaryTree();
         test.root = new Node(1);
-        test.root.left = new Node(2);
+        test.root.left = new Node(10);
         test.root.right = new Node(3);
         test.root.left.left = new Node(4);
         test.root.left.right = new Node(5);
@@ -25,8 +25,9 @@ public class BinaryTreeTest {
 
     @Test
     public void findMax(){
-        assertEquals("max is 5",
-                5,
+        assertEquals("max is 10",
+                10,
                 test.findMax());
     }
+
 }
