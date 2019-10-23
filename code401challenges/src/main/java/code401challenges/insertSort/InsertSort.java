@@ -1,6 +1,6 @@
-package code401challenges.sortInsertion;
+package code401challenges.insertSort;
 
-public class SortInsertion {
+public class InsertSort {
 
     public static int[] InsertionSort(int[] arrIn){
         for(int i = 1; i < arrIn.length; i++){
