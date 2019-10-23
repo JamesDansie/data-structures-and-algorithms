@@ -43,4 +43,23 @@ public class BinaryTree {
 
         return max;
     }
+
+    //in class example
+//    private int findMaxRecursive(Node curr){
+//        if(curr == null){
+//            return Integer.MIN_VALUE;
+//        }
+//        int max = curr.data;
+//        int leftmax = findMaxRecursive(curr.left);
+//        int rightmax = findMaxRecursive(curr.right);
+//
+//        if(leftmax > max){
+//            max = leftmax;
+//        }
+//        if(rightmax > max){
+//            max = rightmax;
+//        }
+//
+//        return max;
+//    }
 }

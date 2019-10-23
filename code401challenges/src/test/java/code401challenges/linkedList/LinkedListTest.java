@@ -205,4 +205,21 @@ public class LinkedListTest {
                 "Linked List: 1 2 3 4 5 7",
                 ll3);
     }
+
+    @Test
+    public void stuff(){
+        LinkedList testthing = new LinkedList();
+        testthing.insertTail(1);
+        testthing.insertTail(2);
+        testthing.insertTail(3);
+        testthing.insertTail(4);
+        testthing.insertTail(5);
+//        System.out.println("********TEST ***********");
+//        System.out.println(testthing.head.next.next.next.value);
+//        System.out.println("********TEST ***********");
+
+        assertNotEquals("LL should be 1 through 8",
+                "Linked List: 1 2 3 4 5 7",
+                testthing);
+    }
 }
