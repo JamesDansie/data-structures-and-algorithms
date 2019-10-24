@@ -1,14 +1,19 @@
 package code401challenges.mergeSort;
 
+import java.util.Arrays;
+
 public class MergeSort {
-    public static void sort(int[] arrIn, int left, int right){
-
-        if(right > 1){
-            int mid = (right+1)/2;
-
-            sort(arrIn, 1, mid);
-            sort(arrIn, mid+1, right);
-            merge(arrIn, 1, mid, right);
+    public static int[] sort(int[] arrIn){
+        int n  = arrIn.length;
+        if(n > 1){
+            int mid = n/2;
+            int[] left = Arrays.copyOfRange(arrIn, 0, mid);
+            int[] right = Arrays.copyOfRange(arrIn, mid, n);
+            int[] leftback = sort(left);
+            int[] rightback = sort(right);
+            merge(leftback, rightback, arrIn);
+        } else {
+            return arrIn;
         }
     }
 
@@ -20,7 +25,7 @@ public class MergeSort {
         int rArr[] = new int[arr2Len];
 
         for(int i = 0; i < arr1Len; i++){
-            lArr[i] = arrIn[left + 1];
+            lArr[i] = arrIn[left + i];
         }
         for(int j = 0; j < arr2Len; j++){
             rArr[j] = arrIn[mid + 1 + j];
