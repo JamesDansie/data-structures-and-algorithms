@@ -62,24 +62,24 @@ public class Hashtable {
         return result;
     }
 
-    public static void main(String[] args){
-        Hashtable testTable = new Hashtable();
-        System.out.println("cat".hashCode());
-        System.out.println("cat".hashCode());
-        System.out.println(testTable.hash("cat"));
-        System.out.println(testTable.hash("cat"));
-
-        System.out.println(testTable.toString());
-        testTable.add("blah", "test");
-        testTable.add("3", "monkies");
-        System.out.println(testTable.toString());
-
-        System.out.println(testTable.get("3"));
-        System.out.println(testTable.contains("3"));
-        System.out.println(testTable.contains("lalalal"));
-
-        testTable.add("blah", "test");
-    }
+//    public static void main(String[] args){
+//        Hashtable testTable = new Hashtable();
+//        System.out.println("cat".hashCode());
+//        System.out.println("cat".hashCode());
+//        System.out.println(testTable.hash("cat"));
+//        System.out.println(testTable.hash("cat"));
+//
+//        System.out.println(testTable.toString());
+//        testTable.add("blah", "test");
+//        testTable.add("3", "monkies");
+//        System.out.println(testTable.toString());
+//
+//        System.out.println(testTable.get("3"));
+//        System.out.println(testTable.contains("3"));
+//        System.out.println(testTable.contains("lalalal"));
+//
+//        testTable.add("blah", "test");
+//    }
 
     @Override
     public String toString() {
