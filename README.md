@@ -39,6 +39,7 @@ The 301 folder contains;
 * FizzBuzz Tree
 * Breadth First Traversal for Tree
 * Find Max for Binary Tree
+* Hashtables
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -280,3 +281,21 @@ The method will start with the root node and root.data as the max value. It will
 
 ### References
 Code at; https://github.com/JamesDansie/data-structures-and-algorithms
+
+# Hashtables
+<!-- Short summary or background information -->
+Implement a hashtable of strings
+
+## Challenge
+<!-- Description of the challenge -->
+Hashtables are helpful because they have O(1) for both lookups and additions. It is a trickie data structure since it is an array of linkedlists, and the linkedlists have a type of storage. Storage is a made up class that has a string for key and value.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->See challenge section above.
+
+## API
+<!-- Description of each method publicly available in each of your hashtable -->
+* hash takes in key string and returns a hash int
+* add takes in a string key and a string value. It will add the strings, and return true if it was successful. It will throw an illegalArgumentException if it finds a duplicate key.
+* get takes in a string key and returns the string result. It will send back "Not Found" if it does not find the value.
+* contains takes in a String key and returns a true if it finds the value, otherwise it returns a false.
