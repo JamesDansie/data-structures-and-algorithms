@@ -13,4 +13,12 @@ public class RepeatedWordTest {
                 "the",
                 response);
     }
+
+    @Test
+    public void firstRepeatCapital() {
+        String response = RepeatedWord.firstRepeat("ThE la the a THE ");
+        assertEquals("the answer should be the",
+                "the",
+                response);
+    }
 }
