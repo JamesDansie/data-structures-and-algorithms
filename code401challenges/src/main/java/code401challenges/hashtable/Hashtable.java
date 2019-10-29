@@ -1,5 +1,7 @@
 package code401challenges.hashtable;
 
+import org.checkerframework.checker.units.qual.K;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 
@@ -7,8 +9,10 @@ public class Hashtable {
     //how to make an array of ll https://stackoverflow.com/questions/20202889/how-can-i-create-an-array-of-linked-lists-in-java
     private LinkedList<Storage>[] values = new LinkedList[10];
 
-    Hashtable(){
-
+    public Hashtable(){
+        for(int i = 0; i < values.length; i++){
+            values[i] = new LinkedList<Storage>();
+        }
     }
 
     public int hash(String key){
@@ -16,19 +20,13 @@ public class Hashtable {
     }
 
     public boolean add(String key, String value){
-
-        if(contains(key)){
-            throw new IllegalArgumentException("Must be unique Key");
-        }
-
+        boolean result = (contains(key) ? false : true);
         Storage thingToStore = new Storage(key, value);
         int index = hash(key);
-        if(this.values[index] == null){
-            this.values[index] = new LinkedList<>();
-        }
+
         this.values[index].add(thingToStore);
 
-        return true;
+        return result;
     }
 
     public String get(String key){
@@ -36,14 +34,12 @@ public class Hashtable {
 
         LinkedList<Storage> llback = this.values[index];
 
-        String result = "Not found";
-
         for(Storage storedThing : llback){
             if(key.equals(storedThing.getKey())){
-                result = storedThing.getValue();
+                return storedThing.getValue();
             }
         }
-        return result;
+        return null;
     }
 
     public boolean contains(String key){
@@ -52,14 +48,13 @@ public class Hashtable {
 
         boolean result = false;
 
-        if(llback != null){
-            for(Storage storedThing : llback){
-                if(key.equals(storedThing.getKey())){
-                    result = true;
-                }
+        for(Storage storedThing : llback){
+            if(key.equals(storedThing.getKey())){
+                return true;
             }
         }
-        return result;
+
+        return false;
     }
 
 //    public static void main(String[] args){

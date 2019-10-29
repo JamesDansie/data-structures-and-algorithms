@@ -299,3 +299,19 @@ Hashtables are helpful because they have O(1) for both lookups and additions. It
 * add takes in a string key and a string value. It will add the strings, and return true if it was successful. It will throw an illegalArgumentException if it finds a duplicate key.
 * get takes in a string key and returns the string result. It will send back "Not Found" if it does not find the value.
 * contains takes in a String key and returns a true if it finds the value, otherwise it returns a false.
+
+# Repeated Word
+<!-- Short summary or background information -->
+Write a method that takes in a string, and returns the first repeated word.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a method that takes in a string, and returns the first repeated word.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Use a scanner to read through each word. While the scanner has words left, compare each word to a hash table. If the word is unique (not in the hash table), then add it to the table, otherwise return it.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge19RepeatWords.jpg)

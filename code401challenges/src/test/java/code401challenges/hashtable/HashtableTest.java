@@ -17,7 +17,7 @@ public class HashtableTest {
 
     @Test
     public void hash() {
-        assertEquals("cat should has to 2",
+        assertEquals("cat should hash to 2",
                 test.hash("cat"),
                 2);
     }
@@ -26,7 +26,7 @@ public class HashtableTest {
     public void add() {
         assertEquals("Happy test",
                 test.toString(),
-                "Hashtable{values=[[Storage{key='key3', value='value3'}], null, null, null, null, null, null, null, [Storage{key='key1', value='value1'}], [Storage{key='key2', value='value2'}]]}");
+                "Hashtable{values=[[Storage{key='key3', value='value3'}], [], [], [], [], [], [], [], [Storage{key='key1', value='value1'}], [Storage{key='key2', value='value2'}]]}");
     }
 
     @Test
@@ -46,9 +46,9 @@ public class HashtableTest {
         assertTrue(test.contains("key1"));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void addDup(){
-        test.add("key1","value1");
+        assertFalse(test.add("key1","value1"));
     }
 
     @Test
