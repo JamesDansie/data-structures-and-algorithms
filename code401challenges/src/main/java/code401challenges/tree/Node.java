@@ -5,17 +5,17 @@ package code401challenges.tree;
 // https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
 // https://stackoverflow.com/questions/22927184/trying-to-use-hashmap-to-count-frequency-of-words-in-array
 public class Node {
-    Node left;
-    Node right;
-    int data;
+    public Node left;
+    public Node right;
+    public int data;
 
-    Node(Node left,Node right,int data){
+    public Node(Node left,Node right,int data){
         this.left = left;
         this.right = right;
         this.data = data;
     }
 
-    Node(int data){
+    public Node(int data){
         this.left = null;
         this.right = null;
         this.data = data;
