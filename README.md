@@ -40,6 +40,8 @@ The 301 folder contains;
 * Breadth First Traversal for Tree
 * Find Max for Binary Tree
 * Hashtables
+* Repeated Word
+* Tree Intersection
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -315,3 +317,20 @@ Use a scanner to read through each word. While the scanner has words left, compa
 ## Solution
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge19RepeatWords.jpg)
+
+# Tree Intersection
+<!-- Short summary or background information -->
+Write a method that takes in two binary trees, and returns the values that both trees contain.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a method that takes in two binary trees, and returns the a set of the values that both trees contain.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Recursively got through each tree. In one tree add all the values to a linked list, in the other tree add all the values to a set. The loop through the linked list and see if the value is in the set. If it is then add it to a separate set and return that set.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge32treeIntersection.jpg)
+

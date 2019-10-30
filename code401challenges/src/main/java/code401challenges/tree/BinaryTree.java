@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class BinaryTree {
 
-    Node root;
+    public Node root;
 
     public void breadthprint(){
         Queue<Node> queue = new LinkedList<Node>();
