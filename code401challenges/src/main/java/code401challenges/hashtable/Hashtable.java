@@ -7,7 +7,7 @@ import java.util.LinkedList;
 
 public class Hashtable {
     //how to make an array of ll https://stackoverflow.com/questions/20202889/how-can-i-create-an-array-of-linked-lists-in-java
-    private LinkedList<Storage>[] values = new LinkedList[10];
+    public LinkedList<Storage>[] values = new LinkedList[10];
 
     public Hashtable(){
         for(int i = 0; i < values.length; i++){
