@@ -42,6 +42,7 @@ The 301 folder contains;
 * Hashtables
 * Repeated Word
 * Tree Intersection
+* Hashtable Left Join
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -333,4 +334,20 @@ Recursively got through each tree. In one tree add all the values to a linked li
 ## Solution
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge32treeIntersection.jpg)
+
+# Left Join HT
+<!-- Short summary or background information -->
+Write a method that takes in two Hashtables and performs a left join
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a method that takes in two Hashtables and performs a left join
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Store the values of one tables, and then loop through them. As the loop goes through store them in a new data structure. Also use the key of first table to get the value from the second table.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge33HTLeftJoin.jpg)
 
