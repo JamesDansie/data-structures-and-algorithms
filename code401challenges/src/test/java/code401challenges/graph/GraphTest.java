@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 
 public class GraphTest {
 
+    //Can't declare in @Before or else slcVert is hidden from the scope of other methods :(
     Graph test = new Graph();
     Vertex slcVert = test.AddNode("Salt Lake City");
     Vertex seaVert = test.AddNode("Seattle");
@@ -50,7 +51,7 @@ public class GraphTest {
         test.AddEdge(837, seaVert, slcVert);
         test.AddEdge(162, seaVert, portVert);
         test.AddEdge(770, portVert, slcVert);
-        
+
         assertTrue(test.GetNeighbors(slcVert).get(0).weight == 837);
     }
 

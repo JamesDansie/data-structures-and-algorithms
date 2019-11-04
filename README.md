@@ -43,6 +43,7 @@ The 301 folder contains;
 * Repeated Word
 * Tree Intersection
 * Hashtable Left Join
+# Graphs
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -351,3 +352,22 @@ Store the values of one tables, and then loop through them. As the loop goes thr
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge33HTLeftJoin.jpg)
 
+# Graphs
+<!-- Short summary or background information -->
+A bi directional graph
+
+## Challenge
+<!-- Description of the challenge -->
+Made a graph with connected vertices that do have a weighting, but no direction.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The graph has a set of vertices. The vertices have a name and a list of edges. The edges have a weight, and a vertex. So the vertex points to an edge that has a weight and points to the next vertex.
+
+## API
+<!-- Description of each method publicly available in your Graph -->
+* AddNode method that takes in a String and returns the vertex.
+* AddEdge method that takes in an int weight, a vertex, and a vertex. Returns a void.
+* GetNode returns a Set of Vertices.
+* GetNeighbors method takes in a vertex and returns a list of edges.
+* Size returns an int of the size of the set.
