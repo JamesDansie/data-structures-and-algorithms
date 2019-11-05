@@ -43,6 +43,8 @@ The 301 folder contains;
 * Repeated Word
 * Tree Intersection
 * Hashtable Left Join
+* Graphs
+* Breadth First of a Graph
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -351,3 +353,38 @@ Store the values of one tables, and then loop through them. As the loop goes thr
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge33HTLeftJoin.jpg)
 
+# Graphs
+<!-- Short summary or background information -->
+A bi directional graph
+
+## Challenge
+<!-- Description of the challenge -->
+Made a graph with connected vertices that do have a weighting, but no direction.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The graph has a set of vertices. The vertices have a name and a list of edges. The edges have a weight, and a vertex. So the vertex points to an edge that has a weight and points to the next vertex.
+
+## API
+<!-- Description of each method publicly available in your Graph -->
+* AddNode method that takes in a String and returns the vertex.
+* AddEdge method that takes in an int weight, a vertex, and a vertex. Returns a void.
+* GetNode returns a Set of Vertices.
+* GetNeighbors method takes in a vertex and returns a list of edges.
+* Size returns an int of the size of the set.
+
+# Breadth First Graph
+<!-- Short summary or background information -->
+Write a method that does a breadth first traversal of a graph.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a method that takes in a starting node and returns a linked list of nodes added in a breadth first order.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Take in a starting node. Make an empty set, queue, and linked list. For add the starting node to the set and linked list. Loop through the nodes with queue. While the queue is not empty then check the edges of a the current node. If the edge is not in the set, then add that edge value to the set, queue and linked list. After going through the edges, update the queue, and continue until the queue is empty. Return the linked list. This is O(n) for time and space.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge36.jpg)
