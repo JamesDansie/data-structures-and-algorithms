@@ -43,7 +43,8 @@ The 301 folder contains;
 * Repeated Word
 * Tree Intersection
 * Hashtable Left Join
-# Graphs
+* Graphs
+* Breadth First of a Graph
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -371,3 +372,19 @@ The graph has a set of vertices. The vertices have a name and a list of edges. T
 * GetNode returns a Set of Vertices.
 * GetNeighbors method takes in a vertex and returns a list of edges.
 * Size returns an int of the size of the set.
+
+# Breadth First Graph
+<!-- Short summary or background information -->
+Write a method that does a breadth first traversal of a graph.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a method that takes in a starting node and returns a linked list of nodes added in a breadth first order.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Take in a starting node. Make an empty set, queue, and linked list. For add the starting node to the set and linked list. Loop through the nodes with queue. While the queue is not empty then check the edges of a the current node. If the edge is not in the set, then add that edge value to the set, queue and linked list. After going through the edges, update the queue, and continue until the queue is empty. Return the linked list. This is O(n) for time and space.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge36.jpg)
