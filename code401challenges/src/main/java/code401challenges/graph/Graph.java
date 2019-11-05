@@ -37,6 +37,13 @@ public class Graph {
     }
 
     public List<Edge> GetNeighbors(Vertex vertexIn){
+//        Set<Vertex> neighbors = new HashSet<>();
+//        for(Edge edge : vertexIn.getEdges()){
+//            if(!neighbors.contains(edge.vert1)){
+//                neighbors.add(edge.vert1);
+//            }
+//        }
+//        return neighbors;
         return vertexIn.getEdges();
     }
 
