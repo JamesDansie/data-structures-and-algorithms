@@ -45,6 +45,7 @@ The 301 folder contains;
 * Hashtable Left Join
 * Graphs
 * Breadth First of a Graph
+* Get Edges of a Graph
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -388,3 +389,19 @@ Take in a starting node. Make an empty set, queue, and linked list. For add the 
 ## Solution
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge36.jpg)
+
+# Get Edges of a Graph
+<!-- Short summary or background information -->
+Write a method will add up the weight of a given path of vertices in a graph.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a method that will take in a graph and a string array of names of vertices. Then traverse those vertices and add up the weights along the way. If the path is not possible return -1, otherwise return the total weight.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The method is O(n) where n is the number of edges for time. It is O(1) for space.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge37.jpg)
