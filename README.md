@@ -46,6 +46,7 @@ The 301 folder contains;
 * Graphs
 * Breadth First of a Graph
 * Get Edges of a Graph
+* Depth first of a graph
 
 # Reverse an Array
 <!-- Short summary or background information -->
@@ -405,3 +406,19 @@ The method is O(n) where n is the number of edges for time. It is O(1) for space
 ## Solution
 <!-- Embedded whiteboard image -->
 ![](./code401challenges/src/main/java/code401challenges/assets/401challenge37.jpg)
+
+# Depth First Graph
+<!-- Short summary or background information -->
+Write a method that does a depth first traversal of a graph.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a method that takes in a starting node and returns a linked list of nodes added in a depth first order.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Same as Breadth first, but with a stack instead of a queue.
+
+## Solution
+<!-- Embedded whiteboard image -->
+![](./code401challenges/src/main/java/code401challenges/assets/401challenge38.jpg)
