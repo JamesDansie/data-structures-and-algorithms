@@ -19,6 +19,7 @@ public class TreeTest {
         test.add(5);
         test.add(7);
         test.add(9);
+
     }
 
     //Using a hash map to make a histogram to check randomness

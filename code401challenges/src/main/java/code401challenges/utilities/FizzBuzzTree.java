@@ -11,10 +11,10 @@ public class FizzBuzzTree {
     private Node recursiveAdd(Node curr, String data){
         if(curr == null){
             return new Node(data);
-        } else if(curr.left == null){
-            curr.left = recursiveAdd(curr.left, data);
-        } else if(curr.right == null){
-            curr.right = recursiveAdd(curr.right, data);
+//        } else if(curr.left == null){
+//            curr.left = recursiveAdd(curr.left, data);
+//        } else if(curr.right == null){
+//            curr.right = recursiveAdd(curr.right, data);
         } else if(randInt() == 0){
             curr.left = recursiveAdd(curr.left, data);
         } else {

@@ -1,4 +1,4 @@
-# Insert Sort
+# Quick Sort
 ### Author: James Dansie
 This is the quick sort algorithm. It begins by picking one element, a pivot, and then putting all the values smaller than it to the left, and all the values larger than it to the right. It then calls that again on the left half and the right half. Each call breaks the left and right half into a smaller and smaller piece until the whole thing is sorted. 
 ![](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)

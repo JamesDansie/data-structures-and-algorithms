@@ -222,4 +222,23 @@ public class LinkedListTest {
                 "Linked List: 1 2 3 4 5 7",
                 testthing);
     }
+
+    @Test
+    public void recursionMerge(){
+        LinkedList ll1 = new LinkedList();
+        LinkedList ll2 = new LinkedList();
+
+        ll1.insertTail(1);
+        ll1.insertTail(1);
+        ll1.insertTail(1);
+        ll1.insertTail(1);
+
+        ll2.insertTail(2);
+        ll2.insertTail(2);
+        ll2.insertTail(2);
+
+        LinkedList.recursiveMerge(ll1.head, ll2.head);
+
+        System.out.println(ll1);
+    }
 }

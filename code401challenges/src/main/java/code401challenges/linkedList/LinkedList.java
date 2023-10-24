@@ -200,4 +200,15 @@ public class LinkedList {
 
         return ll3;
     }
+
+    public static Node recursiveMerge(Node curr1, Node curr2){
+        if(curr1 == null){
+            return curr2;
+        }
+
+        curr1.next = recursiveMerge(curr2, curr1.next);
+
+        return curr1;
+    }
+
 }

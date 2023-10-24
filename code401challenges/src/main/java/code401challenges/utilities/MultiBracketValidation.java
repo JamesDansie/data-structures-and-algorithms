@@ -13,6 +13,8 @@ public class MultiBracketValidation {
         for(int i = 0; i < input.length(); i++){
 
             String letterIn = Character.toString(input.charAt(i));
+            char charIn = input.charAt(i);
+            if(charIn == '(' || charIn == '{')
 
             if(
             letterIn.equals("(") ||

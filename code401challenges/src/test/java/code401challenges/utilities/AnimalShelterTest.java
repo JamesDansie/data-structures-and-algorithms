@@ -14,13 +14,13 @@ public class AnimalShelterTest {
         test.enqueue(new Dog("Dog 2"));
         test.enqueue(new Cat("Cat 1"));
         test.enqueue(new Cat("Cat 2"));
+
 ;    }
 
-//    @Test
-//    public void dequeue() {
-//        Animal dog = test.dequeue("dog");
-//        assertEquals("Dog 1 should be first",
-//                "Dog 1",
-//                dog.name);
-//    }
+    @Test
+    public void dequeue() {
+        Animal dog = test.dequeue("dog");
+        System.out.println(test.dequeue("cat"));
+
+    }
 }

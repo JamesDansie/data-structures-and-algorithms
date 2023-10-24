@@ -7,6 +7,7 @@ public class Queue<E> {
     public void queue(E o){
         //add to the front
         if(front == null){
+
             front = new Node<E>(o);
             back = front;
         } else {

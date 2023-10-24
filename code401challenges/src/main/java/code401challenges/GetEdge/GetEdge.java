@@ -15,6 +15,8 @@ public class GetEdge {
 
         int total = 0;
         Vertex curr = null;
+
+        //Nodes are stored in a set. This grabs the node that matches the first city name
         for(Vertex vert : gin.GetNodes()){
             if(cities[0].equals(vert.getName())){ curr = vert;}
         }

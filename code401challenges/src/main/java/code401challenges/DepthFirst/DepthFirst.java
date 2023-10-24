@@ -18,6 +18,7 @@ public class DepthFirst {
         stack.add(startNode);
         Vertex curr = startNode;
 
+
         while(!stack.empty()){
             for(Edge edge : curr.getEdges()){
                 if(!set.contains(edge.getVert1())){

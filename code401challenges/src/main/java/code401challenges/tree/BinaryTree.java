@@ -44,6 +44,16 @@ public class BinaryTree {
         return max;
     }
 
+    private static int findMaxRecursiveSmartWay(Node node){
+        if(node == null){
+            return Integer.MIN_VALUE;
+        }
+        return Math.max(node.data,
+                Math.max(
+                findMaxRecursiveSmartWay(node.left),
+                findMaxRecursiveSmartWay(node.right)));
+    }
+
     //in class example
 //    private int findMaxRecursive(Node curr){
 //        if(curr == null){
